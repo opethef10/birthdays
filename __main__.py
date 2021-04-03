@@ -4,7 +4,7 @@ from pathlib import Path
 from datetime import date
 from utilities import dateParser, dayofyear, fixedCal, march21, doğumGünleri, onBin
 
-
+#comment again
 
 BUGÜN = date.today()
 JSON_PATH = Path(__file__).parent / "birthdays.json"
