@@ -8,8 +8,9 @@ fixedMonths = (
 
 def doğumGünleri(kişi, doğumGünü, today):
     günler = (today - doğumGünü).days
+    hafta = günler // 7
     yaş = age(doğumGünü, today)
-    return f"{kişi:<10} {doğumGünü:%d/%m/%Y %a} {günler:>6} days {yaş:>6.2f} years"
+    return f"{kişi:<10} {doğumGünü:%d/%m/%Y %a} {günler:>6} days {hafta:>5} weeks {yaş:>6.2f} years"
 
 def onBin(kişi, doğumGünü, today, günler = 10000):
     onBin = doğumGünü + timedelta(günler)
