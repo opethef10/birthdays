@@ -28,6 +28,13 @@ if __name__ == "__main__":
 
     # Use the specified file if provided, otherwise fallback to the default path
     json_path = MAIN_DIRECTORY / (args.file if args.file else DEFAULT_JSON_FILE_NAME)
+    if not json_path.exists():
+        if args.file:
+            raise SystemExit(f"FileNotFoundError: No such file or directory: '{json_path}'")
+        raise SystemExit(
+            f"FileNotFoundError: No such file or directory: '{json_path}'\n"
+            f"Either add a file named '{DEFAULT_JSON_FILE_NAME}' (preferably copying from '{DEFAULT_JSON_FILE_NAME}.example') or enter a valid path using the -f command line option."
+        )
     with json_path.open(encoding="utf-8") as jsonFile:
         birthdays = json.load(jsonFile, object_hook = dateParser)
 
