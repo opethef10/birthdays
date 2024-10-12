@@ -10,3 +10,7 @@
 - `python __main__.py -t` for the information how many days do people have until their 10000th day. 
 - `python __main__.py -f [FILE]` for using any other path other than the default path `birthdays.json`. It can be useful if you would like to keep two separate source of birthday information. (Maybe a file called `anniversaries.json` for the anniversary information). Both relative and absolute paths are allowed.
  
+## Example Output
+Here is an example output from the `birthdays.json.example` file at 12 Oct 2024
+![](./screenshot.png)
+
