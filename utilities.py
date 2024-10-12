@@ -11,7 +11,7 @@ def doğumGünleri(name: str, birthdate: date, today: date) -> str:
     days: int = (today - birthdate).days
     weeks: int = days // 7
     current_age: float = _age(birthdate, today)
-    return f"{name:<10} {birthdate:%d/%m/%Y %a} {days:>6} days {weeks:>5} weeks {current_age:>6.2f} years"
+    return f"{name:<15} {birthdate:%d/%m/%Y %a} {days:>6} days {weeks:>5} weeks {current_age:>6.2f} years"
 
 def onBin(name: str, birthdate: date, today: date, milestone: int = 10000) -> str:
     tenThousandthDay: date = birthdate + timedelta(milestone)
