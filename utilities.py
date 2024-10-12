@@ -76,4 +76,6 @@ def march21(today: date) -> str:
             day -= margin
         else:
             return f"{day:02}/{month:02}/{year}"
+    # In case of a leap year
+    return f"31/12/{year}"
 
