@@ -1,4 +1,23 @@
 # birthdays
+
+## Getting Started
+
+### Clone the Repository
+To clone this repository using Git, run the following command in your terminal:
+
+```bash
+git clone https://github.com/opethef10/birthdays.git
+```
+
+### Downloading as ZIP
+If you're not familiar with Git or prefer not to use it, you can download the repository as a ZIP file. Here’s how:
+
+1. Go to the repository page on GitHub.
+2. Click on the green Code button.
+3. Select Download ZIP from the dropdown menu.
+4. Extract the downloaded ZIP file to your desired location.
+
+## Setup Instructions
 - Copy or rename _birthdays.json.example_ to _birthdays.json_ to be able to use your personal data
 - Edit _birthdays.json_ file (You can open the file with Notepad) with names and birthdates of your beloved friends with the given format.
 - Remember to comply with JSON file format rules. Even if you don't know anything about the JSON format; if you mimic the example file format, you won't have a problem. But pay attention to now have a comma after the last date entry.
